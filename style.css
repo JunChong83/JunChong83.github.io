@@ -102,3 +102,51 @@ cursor: pointer;
 background-color: #fff;
 color: #f4511e;
 }
+
+#home {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .jumbotron .container {
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .jumbotron .btn {
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
