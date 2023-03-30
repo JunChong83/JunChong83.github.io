@@ -29,13 +29,31 @@ $(document).ready(function(){
   });
 });
 
-// Optional: add a hover effect to project images
-const projectImages = document.querySelectorAll('.project-image');
-projectImages.forEach((image) => {
-  image.addEventListener('mouseenter', () => {
-    image.style.opacity = '0.8';
+$(document).ready(function() {
+    // Smooth scrolling on click
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top - 100
+        }, 1000);
+      }
+    });
+    
+    // Filter projects
+    $('.filter-btn').on('click', function() {
+      var category = $(this).attr('data-category');
+      
+      $('.project').fadeOut(500);
+      
+      setTimeout(function() {
+        if(category == 'all') {
+          $('.project').fadeIn(500);
+        } else {
+          $('.' + category).fadeIn(500);
+        }
+      }, 500);
+    });
   });
-  image.addEventListener('mouseleave', () => {
-    image.style.opacity = '1';
-  });
-});
+  

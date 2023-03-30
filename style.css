@@ -151,38 +151,40 @@ color: #f4511e;
     }
   }
 
-  #projects {
-    background-color: #f7f7f7;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
   .project {
-    margin-bottom: 40px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   }
   
-  .project-image {
-    width: 100%;
-  }
-  
-  .project-title {
-    margin-top: 20px;
-    margin-bottom: 10px;
+  .project h3 {
     font-size: 24px;
-    font-weight: bold;
+    margin-bottom: 10px;
   }
   
-  .project-description {
-    margin-bottom: 20px;
+  .project p {
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 20px;
   }
   
-  .project-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
+  .project .btn {
+    background-color: #007bff;
     color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
   }
+  
+  .project .btn:hover {
+    background-color: #0062cc;
+  }
+  
+  @media (max-width: 768px) {
+    .project {
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  
