@@ -150,39 +150,3 @@ color: #f4511e;
       transform: translateX(0);
     }
   }
-
-  #projects {
-    background-color: #f7f7f7;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
-  .project {
-    margin-bottom: 40px;
-  }
-  
-  .project-image {
-    width: 100%;
-  }
-  
-  .project-title {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .project-description {
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  .project-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-  }
