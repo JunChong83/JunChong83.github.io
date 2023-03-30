@@ -28,3 +28,14 @@ $(document).ready(function(){
     $(".navbar-collapse").collapse('hide');
   });
 });
+
+// Optional: add a hover effect to project images
+const projectImages = document.querySelectorAll('.project-image');
+projectImages.forEach((image) => {
+  image.addEventListener('mouseenter', () => {
+    image.style.opacity = '0.8';
+  });
+  image.addEventListener('mouseleave', () => {
+    image.style.opacity = '1';
+  });
+});
