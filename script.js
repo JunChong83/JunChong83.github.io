@@ -30,7 +30,6 @@ $(document).ready(function(){
 });
 
 // Optional: add a hover effect to project images
-/*
 const projectImages = document.querySelectorAll('.project-image');
 projectImages.forEach((image) => {
   image.addEventListener('mouseenter', () => {
