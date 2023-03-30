@@ -2,92 +2,162 @@
 <html>
   <head>
     <title>Wai Chun Chong</title>
-    <meta name="description" content="A simple webpage with various HTML tags.">
-    <link rel="stylesheet" href="./resources/css/index.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    <header>
-      <h1>Welcome to My Simple Webpage</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <article>
-        <h2>Article Title</h2>
-        <p>This is a paragraph of text on my webpage.</p>
-        <p>This is another paragraph of text on my webpage.</p>
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-        <figure>
-          <img src="https://placekitten.com/200/300" alt="A cute kitten">
-          <figcaption>A caption for the kitten image.</figcaption>
-        </figure>
-        <section>
-          <h3>Subsection Title</h3>
-          <p>This is a subsection on my webpage.</p>
-          <p>This is another paragraph of text in the subsection.</p>
-        </section>
-        <table>
-          <caption>A table caption</caption>
-          <thead>
-            <tr>
-              <th>Header 1</th>
-              <th>Header 2</th>
-              <th>Header 3</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Row 1, Column 1</td>
-              <td>Row 1, Column 2</td>
-              <td>Row 1, Column 3</td>
-            </tr>
-            <tr>
-              <td>Row 2, Column 1</td>
-              <td>Row 2, Column 2</td>
-              <td>Row 2, Column 3</td>
-            </tr>
-          </tbody>
-        </table>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </article>
-      <aside>
-        <h3>Related Links</h3>
-        <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-        </ul>
-      </aside>
-    </main>
-
-    <h1>Hi, My name is Jun.</h1>
-    <ul>
-      <li>Learn to code</li>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">My Website</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>    
     </ul>
-    <p>Thank you for visiting my site!: <a href="https://www.google.com/" target="_blank">Google</a></p>
-    
-    <footer>
-      <p>&copy; 2023 My Simple Webpage</p>
-    </footer>
-  </body>
+  </div>  
+</nav>
 
+<!-- Home -->
+<div id="home" class="jumbotron jumbotron-fluid text-center">
+  <h1>Welcome to My Website</h1>
+  <p>This is a cool static website created using HTML, CSS, JavaScript, and Bootstrap.</p> 
+</div>
+
+
+<!-- About -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About</h2>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere dictum nulla at euismod. Sed at dui vel nisi ullamcorper euismod. Nullam posuere ex non turpis hendrerit, ac auctor tellus faucibus. Donec pretium sapien ante, vel fringilla dolor tempor sit amet. Sed euismod ligula id odio convallis, at facilisis urna consequat.</p>    
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseAbout">Read more</button>
+      <div id="collapseAbout" class="collapse">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere dictum nulla at euismod. Sed at dui vel nisi ullamcorper euismod. Nullam posuere ex non turpis hendrerit, ac auctor tellus faucibus. Donec pretium sapien ante, vel fringilla dolor tempor sit amet. Sed euismod ligula id odio convallis, at facilisis urna consequat.</p>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<!-- Services -->
+<div id="services" class="container-fluid text-center">
+  <h2>Our Services</h2>
+  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>Power</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere dictum nulla at euismod.</p>
+    </div>
+    <div class="col-sm-4"> 
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>Love</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere dictum nulla at euismod.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>Security</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere dictum nulla at euismod.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>Quality</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere dictum nulla at euismod.</p>
+    </div>
+    <div class="col-sm-4"> 
+      <span class="glyphicon glyphicon-education logo-small"></span>
+      <h4>Education</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere dictum nulla at euismod.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>Support</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere dictum nulla at euismod.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> New York, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1 1234567890</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@mywebsite.com</p>
+    </div>
+    <div class="col-sm-7">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>My Website &copy; 2023</p>
+</footer>
+
+// Add smooth scrolling to all links in navbar + footer link
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        window.location.hash = hash;
+      });
+    } 
+  });
+})
+</script>
+</body>
 </html>
+  

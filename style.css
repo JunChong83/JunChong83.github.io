@@ -1,0 +1,104 @@
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+In the "style.css" file, we can add our custom CSS rules to style the website. Here's an example:
+
+/* Custom CSS */
+.logo {
+font-size: 200px;
+}
+
+.logo-small {
+font-size: 50px;
+}
+
+.navbar {
+margin-bottom: 0;
+background-color: #f4511e;
+z-index: 9999;
+border: 0;
+font-size: 12px !important;
+line-height: 1.42857143 !important;
+letter-spacing: 4px;
+border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+color: #f4511e !important;
+background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+border-color: transparent;
+color: #fff !important;
+}
+
+/* Services */
+#services {
+padding: 50px 0;
+}
+
+#services h4 {
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+#services .glyphicon {
+font-size: 40px;
+margin-bottom: 20px;
+color: #f4511e;
+}
+
+#services p {
+font-size: 16px;
+}
+
+/* Contact */
+#contact {
+padding: 50px 0;
+}
+
+#contact h2 {
+margin: 0 0 15px;
+}
+
+#contact .glyphicon {
+font-size: 20px;
+color: #f4511e;
+}
+
+#contact .form-control {
+border-radius: 0;
+margin-bottom: 15px;
+border: 0;
+padding: 15px;
+background-color: #fff;
+font-size: 16px;
+height: auto;
+}
+
+#contact .form-control:focus {
+border-color: #f4511e;
+box-shadow: none;
+}
+
+#contact .btn {
+border-radius: 0;
+background-color: #f4511e;
+color: #fff;
+border: 0;
+padding: 10px 20px;
+font-size: 16px;
+margin-top: 15px;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+#contact .btn:hover {
+background-color: #fff;
+color: #f4511e;
+}
