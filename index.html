@@ -139,26 +139,8 @@
   <p>My Website &copy; 2023</p>
 </footer>
 
-// Add smooth scrolling to all links in navbar + footer link
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-
-    if (this.hash !== "") {
-      event.preventDefault();
-
-      var hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        window.location.hash = hash;
-      });
-    } 
-  });
-})
-</script>
+<!--Add smooth scrolling to all links in navbar + footer link--> 
+<script src="script.js"></script>
 </body>
 </html>
   
