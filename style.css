@@ -113,7 +113,7 @@ font-size: 16px;
     background-size: cover;
     background-position: center;
     color: #fff;
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
   }
   
   @keyframes fadeIn {
