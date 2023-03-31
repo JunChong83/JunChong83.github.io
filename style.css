@@ -108,6 +108,7 @@ font-size: 16px;
     border-color: #e7430d;
   }
 
+/* Home */
 #home {
     background-size: cover;
     background-position: center;
@@ -156,6 +157,7 @@ font-size: 16px;
     }
   }
 
+  /* Project */
   .project {
     background-color: #f2f2f2;
     padding: 20px;
@@ -191,5 +193,20 @@ font-size: 16px;
     }
   }
   
-  
-  
+  /* Files */
+  #files .card:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #files .btn-primary {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+  #files .btn-primary:hover {
+    background-color: #0d818c;
+    border-color: #0d818c;
+  }

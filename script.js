@@ -70,5 +70,13 @@ $(document).ready(function(){
       footer.fadeOut();
     }
   });
+
+  // Files
+  var downloadLinks = document.querySelectorAll('a[download]');
+  downloadLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+    });
+  });
 });
   
