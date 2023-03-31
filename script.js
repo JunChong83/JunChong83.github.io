@@ -20,7 +20,7 @@ $(document).ready(function(){
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '.navbar',
-    offset: 0
+    offset: 10
   })
 
   // Collapse navbar on click
@@ -41,6 +41,24 @@ $(document).ready(function(){
         $('.' + category).fadeIn(500);
       }
     }, 500);
+  });
+
+  // Contact
+  $("#contact-form").submit(function(event) {
+    event.preventDefault();
+    var formData = $(this).serialize();
+    $.ajax({
+      type: "POST",
+      url: "send-message.php",
+      data: formData,
+      success: function() {
+        $("#contact-form").trigger("reset");
+        alert("Your message has been sent!");
+      },
+      error: function() {
+        alert("Sorry, there was a problem submitting your message. Please try again later.");
+      }
+    });
   });
 });
   
