@@ -37,23 +37,23 @@ border-color: transparent;
 color: #fff !important;
 }
 
-/* Services */
-#services {
+/* Skills */
+#skills {
 padding: 50px 0;
 }
 
-#services h4 {
+#skills h4 {
 font-size: 18px;
 margin-bottom: 20px;
 }
 
-#services .glyphicon {
+#skills .glyphicon {
 font-size: 40px;
 margin-bottom: 20px;
 color: #f4511e;
 }
 
-#services p {
+#skills p {
 font-size: 16px;
 }
 

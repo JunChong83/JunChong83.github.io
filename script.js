@@ -10,7 +10,7 @@ $(document).ready(function(){
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 850, function(){
    
         window.location.hash = hash;
       });
@@ -20,7 +20,7 @@ $(document).ready(function(){
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '.navbar',
-    offset: 50
+    offset: 70
   })
 
   // Collapse navbar on click
