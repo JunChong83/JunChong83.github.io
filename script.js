@@ -43,6 +43,27 @@ $(document).ready(function(){
     }, 500);
   });
 
+
+  // Project
+  $(document).ready(function() {
+    var showMoreBtn = $('#show-more-btn');
+    var hiddenCards = $('.col-lg-4:hidden');
+    
+    // Initially hide the additional cards
+    hiddenCards.hide();
+    
+    // Show more cards when the button is clicked
+    showMoreBtn.click(function() {
+      hiddenCards.slice(0, 3).slideDown();
+      hiddenCards = $('.col-lg-4:hidden');
+      
+      // Hide the "Show More" button if no more hidden cards
+      if (hiddenCards.length === 0) {
+        showMoreBtn.hide();
+      }
+    });
+  });
+  
   // Contact
   $("#contact-form").submit(function(event) {
     event.preventDefault();
